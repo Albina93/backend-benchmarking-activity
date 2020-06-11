@@ -6,8 +6,9 @@ from copy import deepcopy
 from heapq import merge
 import random
 
-random_seq = range(5000)
+random_seq = list(range(5000))
 random.shuffle(random_seq)
+
 
 def bubble_sort(seq):
     d_seq = deepcopy(seq)
@@ -39,7 +40,7 @@ def insertion_sort(seq):
     return d_seq
 
 
-def insertion_sort_bin(seq):
+def insertion_bin_sort(seq):
     d_seq = deepcopy(seq)
 
     for i in range(1, len(d_seq)):
@@ -142,13 +143,13 @@ def quick_sort(seq):
 
 if __name__ == "__main__":
 
-    print "random_seq before: {}\n".format(random_seq)
+    print(f"random_seq before: {random_seq}\n")
 
     algorithms = [
-        bubble_sort, insertion_sort, insertion_sort_bin, selection_sort,
+        bubble_sort, insertion_sort, insertion_bin_sort, selection_sort,
         merge_sort, heap_sort, quick_sort]
 
     for algorithm in algorithms:
-        print "{}: {}".format(algorithm.__name__, algorithm(random_seq))
+        print(f"{algorithm.__name__}: {algorithm(random_seq)}")
 
-    print "\nrandom_seq after: {}".format(random_seq)
+    print(f"\nrandom_seq after: {random_seq}")
