@@ -53,5 +53,4 @@ article for help on how to analyze statistics.
 
 # Credits
 For a closer look at some of the algorithms used in this activity, see 
-[A tour of the top 5 sorting algorithms with Python code
-](https://medium.com/@george.seif94/a-tour-of-the-top-5-sorting-algorithms-with-python-code-43ea9aa02889).
+[A tour of the top 5 sorting algorithms with Python code](https://medium.com/@george.seif94/a-tour-of-the-top-5-sorting-algorithms-with-python-code-43ea9aa02889).
